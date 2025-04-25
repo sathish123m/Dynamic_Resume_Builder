@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Resume Generator</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .features {
+            margin-bottom: 30px;
+        }
+
+        .features li {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        button {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Resume Generator</h1>
+    <p>
+        Create professional resumes effortlessly with our easy-to-use Resume Generator. 
+        Whether you're applying for your dream job or updating your CV, we've got you covered!
+    </p>
+    <div class="features">
+        <h2>Features:</h2>
+        <ul style="font-size: larger;">
+            <ul>Simple and intuitive interface</ul>
+            <ul>Customizable templates</ul>
+            <ul>Supports adding skills, experience, education, and more</ul>
+            <ul>Download your resume as a PDF</ul>
+            <ul>Completely free to use</ul>
+        </ul>
+    </div>
+    <button onclick="redirectToResume()">Get Started</button>
+
+    <script>
+        function redirectToResume() {
+            window.location.href = "resume.php";
+        }
+    </script>
+</body>
+</html>
